@@ -19,8 +19,11 @@ Güzel soru. Bu soruyu cevaplamadan önce Git'in tanımına dönelim: Git bir ve
 ## Temel Git Başlıkları ve Git Komutları
 
 1. **Repository**: Olabilecek en temel ve yüzeysel tanımıyla, kod deposudur. Repository'nin çoğu zaman repo şeklinde kullanılmasına da denk gelebilirsiniz.
-2. **Commit**: Git yazılımına eklediğiniz (added) değişikliklerin Git sunucusuna işlenmesi demektir. `git commit`
-3. **Commit Message**: Commit ederken eklenen mesajdır. Yaptığınız değişikliklerin size ve diğer contributor'ler için açıklayıcı olmasına yardımcı olur. `git commit -m "Commit Mesajı"`
+2. **Add**: Yerel yaptığınız değişikleri git sistemine eklemenize yarar.
+   1. **add --all**: Değişiklik yapılmış tüm dosyaları eklemeye yarar.
+   2. **add [[dosya adı]]**: Belirtilen dosya adını eklemeye yarar.
+3. **Commit**: Git yazılımına eklediğiniz (added) değişikliklerin Git sunucusuna işlenmesi demektir. `git commit`
+   1. **Commit Message**: Commit ederken eklenen mesajdır. Yaptığınız değişikliklerin size ve diğer contributor'ler için açıklayıcı olmasına yardımcı olur. `git commit -m "Commit Mesajı"`
 4. **Contributor**: Kelime anlamı olarak katkı sağlayan kişi demektir. Projenize ekleme yapan, bir bug ya da typo keşfeden ve bunu size bildiren kişilerdir.
 5. **Push**: Commit ettiğiniz değişikliklerin uzak sunucuya gönderilmesi demektir. `git push`
    1. **Branch**: Projenizin farklı versiyonlarına erişmenize, değişiklik yapmanıza ve kullanmanıza yarar. Push ederken `-u` flag'i ile belirtilir: `git push -u **origin main**`. İlk etapta branch kullanmanız gerekmiyor.
