@@ -39,27 +39,3 @@ Güzel soru. Bu soruyu cevaplamadan önce Git'in tanımına dönelim: Git bir ve
 8. **Pull (Çekme)**: Uzak sunucudaki değişiklikleri yerel dosyalara eklemeye yarar. `git pull`
 9. **Fork (Çatal)**: Başkasının (ya da kendinizin) yaptığı bir projeyi sizin de repolarınız arasına ekler ve bu projede değişiklik yapabilir, daha sonra pull request'te bulunabilirsiniz.
 10. **Pull Request (Çekme isteği)**: Bir repoyu forkladınız, `git clone` diyerek yerel bilgisayarınıza indirdiniz. Kodları incelerken bazı buglar ya da typolar (yazım yanlışı) buldunuz. Bunları düzelttiniz, `git add --all` diyerek git'e eklediniz ve `git commit -m "Bazı hatalar ve yazım yanlışları buldum` diyerek commitlediniz. Daha sonra `git push -u origin main` diyerek de uzak sunucuya push'ladınız. Bu durumda sadece kendi reponuzdaki hataları düzelttiniz ama asıl forkladığınız repo'da hata ve typolar hala duruyor. Bu durumda ne yapmanız gerekir? Ne yapmalısınız da kendi reponuzdaki değişiklikleri reponun asıl maintainer'ine de ileteceksiniz? İşte bu durumda yapmanız gereken şey bir pull request oluşturmak olacaktır.
-
-## Git ve GitHub'ın örnek kullanımları.
-
-Sanırım bu kısım, yazıdaki en önemli ve işinize en çok yarayacak kısım. GitHub'a geçmeden önce, teme Git komutlarını gerçek hayat uygulamaları üstünden inceleyelim. Eğer bilgisayarınızda git kurulu değilse, işletim sisteminize göre git'i kurun. Ubuntu kullanıcıları `sudo apt-get install git` diyerek, Arch kullanıcıları `sudo pacman -S git` diyerek, Windows kullanıcıları da [bu adresten](https://git-scm.com/download/win) git kurabilirler.
-
-### 1. git clone
-
-Lütfen terminal ya da komut istemini açarak `git clone https://github.com/onurravli/benim-ilk-repom` yazın ve benim-ilk-repom isimli repoyu `clone`'layın. Bu komut, benim-ilk-repom isimli repoyu bilgisayarınıza indirecektir.
-
-### 2. git add
-
-Bu repo içinde merhaba-dunya.txt adında bir dosya oluşturun ve içine istediğiniz şeyleri yazın. Feel free!
-
-Daha sonra `git add --all` ya da `git add merhaba-dunya.txt` komutuyla merhaba-dunya.txt dosyasını git'e ekleyin.
-
-### 3. git commit
-
-Eklediğiniz dosyayı git sunucusuna `commit` etmek için `git commit -m "merhaba-dunya.txt dosyasını oluşturdum"` komutunu kullanın. Bu komuttan sonra yerel dosyada yaptıklarınız, git sunucusuna işlenecektir.
-
-### 4. git push
-
-Commit ettiğiniz değişiklikleri `git push -u origin main` komutuyla repo'ya ekleyin. Artık merhaba-dunya.txt dosyası repo'ya eklenmiş oldu.
-
-**SONUÇ**: Bu örnekte uzak sunucuda bulunan `benim-ilk-repom` adlı repoyu bilgisayarınıza indirdiniz, dosya eklediniz, dosyada düzenleme yaptınız ve uzak sunucuya `push` ettiniz. Yani ittiniz.
