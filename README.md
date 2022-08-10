@@ -11,13 +11,9 @@ Merhaba. Bu repo'da Git ve GitHub'ı dilim döndüğünce ve basit bir şekilde 
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
---
-
 ## Git Nedir?
 
 Git bir versiyon kontol yazılımıdır ve Linux'un yaratıcısı Linus Torvalds [@torvalds](https://github.com/torvalds) tarafından geliştirilmiştir.
-
---
 
 ## Neden Git Kullanırız?
 
@@ -25,13 +21,9 @@ Tanımından da anlaşılabileceği üzere, yazılımların versiyonlarını dü
 
 Mesela bir yazılım geliştirdiniz ve bunu bir bulutta saklıyorsunuz. Bulutta sakladığınız şey, aslında yazılımın son halidir. Ama GitHub'da saklasaydınız projenin her aşamasını görebilir, yeri geldiğinde yaptığınız değişiklikleri geri alabilir, başka insanların da bu projeye katkıda bulunmasını sağlayabilirdiniz.
 
---
-
 ## Git Buysa, GitHub Ne?
 
 Güzel soru. Bu soruyu cevaplamadan önce Git'in tanımına dönelim: Git bir versiyon kontol **yazılımıdır**. Yani Git bir yazılımdır. GitHub ise bu yazılım üstüne inşa edilmiş bir **servistir**. Git açık kaynaklı olduğu için açık kaynak topluluğu tarafından geliştirilirken, GitHub ise ticari bir servistir ve Microsoft tarafından geliştirilir. Ücretsiz ve ücretli sürümleri mevcuttur.
-
---
 
 ## Temel Git Başlıkları ve Git Komutları
 
@@ -50,7 +42,6 @@ Güzel soru. Bu soruyu cevaplamadan önce Git'in tanımına dönelim: Git bir ve
 9. **Fork (Çatal)**: Başkasının (ya da kendinizin) yaptığı bir projeyi sizin de repolarınız arasına ekler ve bu projede değişiklik yapabilir, daha sonra pull request'te bulunabilirsiniz.
 10. **Pull Request (Çekme isteği)**: Bir repoyu forkladınız, `git clone` diyerek yerel bilgisayarınıza indirdiniz. Kodları incelerken bazı buglar ya da typolar (yazım yanlışı) buldunuz. Bunları düzelttiniz, `git add --all` diyerek git'e eklediniz ve `git commit -m "Bazı hatalar ve yazım yanlışları buldum` diyerek commitlediniz. Daha sonra `git push -u origin main` diyerek de uzak sunucuya push'ladınız. Bu durumda sadece kendi reponuzdaki hataları düzelttiniz ama asıl forkladığınız repo'da hata ve typolar hala duruyor. Bu durumda ne yapmanız gerekir? Ne yapmalısınız da kendi reponuzdaki değişiklikleri reponun asıl maintainer'ine de ileteceksiniz? İşte bu durumda yapmanız gereken şey bir pull request oluşturmak olacaktır.
 
---
 
 ## Git ve GitHub'ın örnek kullanımları.
 
