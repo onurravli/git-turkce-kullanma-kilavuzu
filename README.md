@@ -51,3 +51,5 @@ Lütfen terminal ya da komut istemini açarak `git clone https://github.com/onur
 ### 2. git add
 
 Bu repo içinde merhaba-dunya.txt adında bir dosya oluşturun ve içine istediğiniz şeyleri yazın. Feel free!
+
+Daha sonra `git add --all` ya da `git add merhaba-dunya.txt` komutuyla merhaba-dunya.txt dosyasını git'e ekleyin.
