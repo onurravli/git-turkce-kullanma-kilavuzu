@@ -14,7 +14,7 @@ Mesela bir yazılım geliştirdiniz ve bunu bir bulutta saklıyorsunuz. Bulutta 
 
 ## Git Buysa, GitHub Ne?
 
-Güzel soru. Bu soruyu cevaplamadan önce Git'in tanımına dönelim: Git bir versiyon kontol **yazılımıdır**. Yani Git bir yazılımdır. GitHub ise bu yazılım üstüne inşa edilmiş bir **servistir**.
+Güzel soru. Bu soruyu cevaplamadan önce Git'in tanımına dönelim: Git bir versiyon kontol **yazılımıdır**. Yani Git bir yazılımdır. GitHub ise bu yazılım üstüne inşa edilmiş bir **servistir**. Git açık kaynaklı olduğu için açık kaynak topluluğu tarafından geliştirilirken, GitHub ise ticari bir servistir ve Microsoft tarafından geliştirilir. Ücretsiz ve ücretli sürümleri mevcuttur.
 
 ## Temel Git Başlıkları ve Git Komutları
 
