@@ -42,4 +42,12 @@ Güzel soru. Bu soruyu cevaplamadan önce Git'in tanımına dönelim: Git bir ve
 
 ## Git ve GitHub'ın örnek kullanımları.
 
-Sanırım bu kısım, yazıdaki en önemli ve işinize en çok yarayacak kısım. GitHub'a geçmeden önce, teme Git komutlarını gerçek hayat uygulamaları üstünden inceleyelim.
+Sanırım bu kısım, yazıdaki en önemli ve işinize en çok yarayacak kısım. GitHub'a geçmeden önce, teme Git komutlarını gerçek hayat uygulamaları üstünden inceleyelim. Eğer bilgisayarınızda git kurulu değilse, işletim sisteminize göre git'i kurun. Ubuntu kullanıcıları `sudo apt-get install git` diyerek, Arch kullanıcıları `sudo pacman -S git` diyerek, Windows kullanıcıları da [bu adresten](https://git-scm.com/download/win) git kurabilirler.
+
+### 1. git clone
+
+Lütfen terminal ya da komut istemini açarak `git clone https://github.com/onurravli/benim-ilk-repom` yazın ve benim-ilk-repom isimli repoyu `clone`'layın. Bu komut, benim-ilk-repom isimli repoyu bilgisayarınıza indirecektir.
+
+### 2. git add
+
+Bu repo içinde merhaba-dunya.txt adında bir dosya oluşturun ve içine istediğiniz şeyleri yazın. Feel free!
