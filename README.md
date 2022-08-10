@@ -53,3 +53,13 @@ Lütfen terminal ya da komut istemini açarak `git clone https://github.com/onur
 Bu repo içinde merhaba-dunya.txt adında bir dosya oluşturun ve içine istediğiniz şeyleri yazın. Feel free!
 
 Daha sonra `git add --all` ya da `git add merhaba-dunya.txt` komutuyla merhaba-dunya.txt dosyasını git'e ekleyin.
+
+### 3. git commit
+
+Eklediğiniz dosyayı git sunucusuna `commit` etmek için `git commit -m "merhaba-dunya.txt dosyasını oluşturdum"` komutunu kullanın. Bu komuttan sonra yerel dosyada yaptıklarınız, git sunucusuna işlenecektir.
+
+### 4. git push
+
+Commit ettiğiniz değişiklikleri `git push -u origin main` komutuyla repo'ya ekleyin. Artık merhaba-dunya.txt dosyası repo'ya eklenmiş oldu.
+
+**SONUÇ**: Bu örnekte uzak sunucuda bulunan `benim-ilk-repom` adlı repoyu bilgisayarınıza indirdiniz, dosya eklediniz, dosyada düzenleme yaptınız ve uzak sunucuya `push` ettiniz. Yani ittiniz.
