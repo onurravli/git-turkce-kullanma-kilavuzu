@@ -1,7 +1,5 @@
 # **Git Türkçe Kullanma Kılavuzu**
 
-## *( !! Hala geliştirme aşamasında !! )*
-
 Merhaba. Bu repo'da Git ve GitHub'ı dilim döndüğünce ve basit bir şekilde anlatmaya çalışacağım. Lütfen eksik ya da hatalı gördüğünüz konular için PR açmaktan çekinmeyin. :)
 
 ## Git Nedir?
