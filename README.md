@@ -32,7 +32,7 @@ Güzel soru. Bu soruyu cevaplamadan önce Git'in tanımına dönelim: Git bir ve
    1. **Commit Message**: Commit ederken eklenen mesajdır. Yaptığınız değişikliklerin size ve diğer contributor'ler için açıklayıcı olmasına yardımcı olur. `git commit -m "Commit Mesajı"`
 4. **Contributor (Katkıda bulunan)**: Kelime anlamı olarak katkı sağlayan kişi demektir. Projenize ekleme yapan, bir bug ya da typo keşfeden ve bunu size bildiren kişilerdir.
 5. **Maintainer (İlgili)**: Bir projeyi geliştiren, yöneten kişilere denir.
-6. **Clone (klon)**: Uzak sunucudaki bir repoyu bilgisayarınıza indirmeye yarar. `git clone https://github.com/onurravli/Git-Turkce-Kullanma-Kilavuzu`
+6. [**Clone (klon)**](https://github.com/onurravli/Git-Turkce-Kullanma-Kilavuzu/blob/main/git-clone.md#git-clone): Uzak sunucudaki bir repoyu bilgisayarınıza indirmeye yarar. `git clone https://github.com/onurravli/Git-Turkce-Kullanma-Kilavuzu`
 7. **Push (İtme)**: Commit ettiğiniz değişikliklerin uzak sunucuya gönderilmesi demektir. `git push`
    1. **Branch**: Projenizin farklı versiyonlarına erişmenize, değişiklik yapmanıza ve kullanmanıza yarar. Push ederken `-u` flag'i ile belirtilir: `git push -u **origin main**`. İlk etapta (git öğrenmeye başlarken yani) branch kullanmanız pek gerekmiyor.
 8. **Pull (Çekme)**: Uzak sunucudaki değişiklikleri yerel dosyalara eklemeye yarar. `git pull`
