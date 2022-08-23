@@ -1,6 +1,6 @@
 # **Git Türkçe Kullanma Kılavuzu**
 
-(Son güncelleme: 11.8.22)
+(Son güncelleme: 11/08/2022)
 
 Merhaba. Bu repo'da Git ve GitHub'ı dilim döndüğünce ve basit bir şekilde anlatmaya çalışacağım. Lütfen eksik ya da hatalı gördüğünüz konular için PR açmaktan çekinmeyin. :)
 
