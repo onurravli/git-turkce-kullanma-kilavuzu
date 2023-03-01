@@ -40,3 +40,35 @@ Güzel soru. Bu soruyu cevaplamadan önce Git'in tanımına dönelim: Git bir ve
 8. **Pull (Çekme)**: Uzak sunucudaki değişiklikleri yerel dosyalara eklemeye yarar. `git pull`
 9. **Fork (Çatal)**: Başkasının (ya da kendinizin) yaptığı bir projeyi sizin de repolarınız arasına ekler ve bu projede değişiklik yapabilir, daha sonra pull request'te bulunabilirsiniz.
 10. **Pull Request (Çekme isteği)**: Bir repoyu forkladınız, `git clone` diyerek yerel bilgisayarınıza indirdiniz. Kodları incelerken bazı buglar ya da typolar (yazım yanlışı) buldunuz. Bunları düzelttiniz, `git add --all` diyerek git'e eklediniz ve `git commit -m "Bazı hatalar ve yazım yanlışları buldum` diyerek commitlediniz. Daha sonra `git push -u origin main` diyerek de uzak sunucuya push'ladınız. Bu durumda sadece kendi reponuzdaki hataları düzelttiniz ama asıl forkladığınız repo'da hata ve typolar hala duruyor. Bu durumda ne yapmanız gerekir? Ne yapmalısınız da kendi reponuzdaki değişiklikleri reponun asıl maintainer'ine de ileteceksiniz? İşte bu durumda yapmanız gereken şey bir pull request oluşturmak olacaktır.
+
+
+## Git Commit Desenleri
+
+Tip, bize hangi değişikliğin veya yenilemenin yapıldığını söylemekle sorumludur, aşağıdaki türleri kural olarak bulunur:
+
+1. **test**: herhangi bir test kodu oluşturma veya değiştirme işlemini gösterir.
+Örnek: Birim testlerinin oluşturulması.
+2. **feat**: projeye yeni bir özellik geliştirildiğini gösterir.
+Örnek: Bir hizmet, işlevsellik, uç nokta vb. eklenmesi.
+3. **refactor**: sistem mantığı/kurallarını etkilemeyen kod yeniden düzenlemesi olduğunda kullanılır.
+Örnek: Kod incelemesinden sonra kod değişiklikleri.
+4. **style**: kod biçimlendirme ve stili değiştiğinde ve sistemi herhangi bir şekilde değiştirmediğinde kullanılır.
+Örnek: Stil kılavuzunu değiştirme, lint kuralını değiştirme, girintileri düzeltme, beyaz boşlukları kaldırma, yorumları kaldırma vb.
+5. **fix**: sistemi hatalar oluşturan hataları düzeltmek için kullanılır.
+Örnek: Beklendiği gibi davranmayan ve hata döndüren bir işlev için bir işleme uygulama.
+6. **chore**: sistemi veya test dosyalarını etkilemeyen proje değişikliklerini gösterir. Bunlar geliştirme değişiklikleridir.
+Örnek: eslint kurallarını değiştirme, prettier ekleme, .gitignore'a daha fazla dosya uzantısı ekleme
+7. **docs**: projedeki belgelerde değişiklik olduğunda kullanılır.
+Örnek: API belgelerine bilgi ekleme, README'yi değiştirme vb.
+8. **build**: projenin yapım sürecini veya harici bağımlılıklarını etkileyen değişiklikleri göstermek için kullanılır.
+Örnek: Gulp, npm bağımlılıklarını ekleme/kaldırma vb.
+8. **perf**: sistem performansını artıran bir değişikliği gösterir.
+Örnek: ForEach'ü While ile değiştirme vb.
+10. **ci**: CI yapılandırma dosyalarında değişiklikler için kullanılır.
+Örnek: Circle, Travis, BrowserStack vb.
+11. **revert**: önceki bir işlemi geri almaya işaret eder.
+
+- Her commit için sadece bir tür seçmek gerekir.
+- Tür seçimi zorunlu olmalıdır.
+- Hangi türü kullanacağınızı bilmiyorsanız, bu commit'i iki veya daha fazla commit'e bölmek mümkündür;
+- Build ve Chore arasındaki fark oldukça az olabilir ve karışıklığa neden olabilir, bu nedenle doğru türün farkında olunmalıdır. Örneğin Node.js için, belirli bir geliştirme bağımlılığı devDependencies'de varsa, chore kullanılabilir. Projede yaygın bağımlılıkların değişikliklerinde/eklemelerinde ve sisteme doğrudan gerçek bir etkisi olanlarda ise build kullanılabilir.
