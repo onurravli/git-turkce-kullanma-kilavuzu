@@ -105,3 +105,11 @@ Başlıca commit tipleri şunlardır:
 
 11. **revert**: Önceki bir işlemi geri almaya işaret eder.
 **Örnek**: Yanlışlıkla merge edilmiş bir pull request'i geri alma.
+
+---
+
+> [!TIP]
+> Eğer hangi tipi kullanacağınızı bilmiyorsanız, commit'i iki veya daha fazla commit'e bölmek mümkündür
+
+> [!NOTE]
+> **Build** ve **Chore** arasındaki fark oldukça az olabilir ve karışıklığa neden olabilir, bu nedenle doğru tipin farkında olunmalıdır. Örneğin Node.js için, belirli bir geliştirme bağımlılığı devDependencies'de varsa, **chore** kullanılabilir. Projede yaygın bağımlılıkların değişikliklerinde/eklemelerinde ve sisteme doğrudan gerçek bir etkisi olanlarda ise **build** kullanılabilir.
