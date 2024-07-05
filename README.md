@@ -113,3 +113,5 @@ Başlıca commit tipleri şunlardır:
 
 > [!NOTE]
 > **Build** ve **Chore** arasındaki fark oldukça az olabilir ve karışıklığa neden olabilir, bu nedenle doğru tipin farkında olunmalıdır. Örneğin Node.js için, belirli bir geliştirme bağımlılığı devDependencies'de varsa, **chore** kullanılabilir. Projede yaygın bağımlılıkların değişikliklerinde/eklemelerinde ve sisteme doğrudan gerçek bir etkisi olanlarda ise **build** kullanılabilir.
+
+Daha fazla bilgi için [Conventional Commits](https://www.conventionalcommits.org/tr/v1.0.0/) sayfasını ziyaret edebilirsiniz.
