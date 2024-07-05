@@ -71,26 +71,37 @@ git commit -m "fix(login): add validation for empty password field"
 
 Commit mesajında tip seçimi zorunludur ve sadece 1 adet tip seçilmelidir. Kapsam belirtmek opsiyoneldir.
 
-Aşağıdaki başlıklarda, commit mesajlarında kullanılan tiplere ve açıklamalara yer verilmiştir.
+Başlıca commit tipleri şunlardır:
 
-1. **test**: herhangi bir test kodu oluşturma veya değiştirme işlemini gösterir.
-Örnek: Birim testlerinin oluşturulması.
-2. **feat**: projeye yeni bir özellik geliştirildiğini gösterir.
-Örnek: Bir hizmet, işlevsellik, uç nokta vb. eklenmesi.
-3. **refactor**: sistem mantığı/kurallarını etkilemeyen kod yeniden düzenlemesi olduğunda kullanılır.
-Örnek: Kod incelemesinden sonra kod değişiklikleri.
-4. **style**: kod biçimlendirme ve stili değiştiğinde ve sistemi herhangi bir şekilde değiştirmediğinde kullanılır.
-Örnek: Stil kılavuzunu değiştirme, lint kuralını değiştirme, girintileri düzeltme, beyaz boşlukları kaldırma, yorumları kaldırma vb.
-5. **fix**: sistemi hatalar oluşturan hataları düzeltmek için kullanılır.
-Örnek: Beklendiği gibi davranmayan ve hata döndüren bir işlev için bir işleme uygulama.
-6. **chore**: sistemi veya test dosyalarını etkilemeyen proje değişikliklerini gösterir. Bunlar geliştirme değişiklikleridir.
-Örnek: eslint kurallarını değiştirme, prettier ekleme, .gitignore'a daha fazla dosya uzantısı ekleme
-7. **docs**: projedeki belgelerde değişiklik olduğunda kullanılır.
-Örnek: API belgelerine bilgi ekleme, README'yi değiştirme vb.
-8. **build**: projenin yapım sürecini veya harici bağımlılıklarını etkileyen değişiklikleri göstermek için kullanılır.
-Örnek: Gulp, npm bağımlılıklarını ekleme/kaldırma vb.
-9. **perf**: sistem performansını artıran bir değişikliği gösterir.
-Örnek: ForEach'ü While ile değiştirme vb.
+1. **test**: Herhangi bir test kodu oluşturma veya değiştirme işlemini gösterir.
+**Örnek**: Birim testlerinin oluşturulması.
+
+2. **feat**: Projeye yeni bir özellik geliştirildiğini gösterir.
+**Örnek**: Bir hizmet, işlevsellik, uç nokta vb. eklenmesi.
+
+3. **refactor**: Sistem mantığı/kurallarını etkilemeyen kod yeniden düzenlemesi olduğunda kullanılır.
+**Örnek**: Kod incelemesinden sonra kod değişiklikleri.
+
+4. **style**: Kod biçimlendirme ve stili değiştiğinde ve sistemi herhangi bir şekilde değiştirmediğinde kullanılır.
+**Örnek**: Stil kılavuzunu değiştirme, lint kuralını değiştirme, girintileri düzeltme, beyaz boşlukları kaldırma, yorumları kaldırma vb.
+
+5. **fix**: Sistemi hatalar oluşturan hataları düzeltmek için kullanılır.
+**Örnek**: Beklendiği gibi davranmayan ve hata döndüren bir işlev için bir işleme uygulama.
+
+6. **chore**: Sistemi veya test dosyalarını etkilemeyen proje değişikliklerini gösterir. Bunlar geliştirme değişiklikleridir.
+**Örnek**: eslint kurallarını değiştirme, prettier ekleme, .gitignore'a daha fazla dosya uzantısı ekleme
+
+7. **docs**: Projedeki belgelerde değişiklik olduğunda kullanılır.
+**Örnek**: API belgelerine bilgi ekleme, README'yi değiştirme vb.
+
+8. **build**: Projenin yapım sürecini veya harici bağımlılıklarını etkileyen değişiklikleri göstermek için kullanılır.
+**Örnek**: Gulp, npm bağımlılıklarını ekleme/kaldırma vb.
+
+9. **perf**: Sistem performansını artıran bir değişikliği gösterir.
+**Örnek**: ForEach'ü While ile değiştirme vb.
+
 10. **ci**: CI yapılandırma dosyalarında değişiklikler için kullanılır.
-Örnek: Circle, Travis, BrowserStack vb.
-11. **revert**: önceki bir işlemi geri almaya işaret eder.
+**Örnek**: Circle, Travis, BrowserStack vb.
+
+11. **revert**: Önceki bir işlemi geri almaya işaret eder.
+**Örnek**: Yanlışlıkla merge edilmiş bir pull request'i geri alma.
