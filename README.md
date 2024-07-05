@@ -41,10 +41,37 @@ Güzel soru. Bu soruyu cevaplamadan önce Git'in tanımına dönelim: Git bir ve
 9. **Fork (Çatal)**: Başkasının (ya da kendinizin) yaptığı bir projeyi sizin de repolarınız arasına ekler ve bu projede değişiklik yapabilir, daha sonra pull request'te bulunabilirsiniz.
 10. **Pull Request (Çekme isteği)**: Bir repoyu forkladınız, `git clone` diyerek yerel bilgisayarınıza indirdiniz. Kodları incelerken bazı buglar ya da typolar (yazım yanlışı) buldunuz. Bunları düzelttiniz, `git add --all` diyerek git'e eklediniz ve `git commit -m "Bazı hatalar ve yazım yanlışları buldum` diyerek commitlediniz. Daha sonra `git push -u origin main` diyerek de uzak sunucuya push'ladınız. Bu durumda sadece kendi reponuzdaki hataları düzelttiniz ama asıl forkladığınız repo'da hata ve typolar hala duruyor. Bu durumda ne yapmanız gerekir? Ne yapmalısınız da kendi reponuzdaki değişiklikleri reponun asıl maintainer'ine de ileteceksiniz? İşte bu durumda yapmanız gereken şey bir pull request oluşturmak olacaktır.
 
-
 ## Git Commit Desenleri
 
-Tip, bize hangi değişikliğin veya yenilemenin yapıldığını söylemekle sorumludur, aşağıdaki türleri kural olarak bulunur:
+Git commit mesajlarınızı yazarken belirli bir deseni takip etmek projenin daha iyi yönetilmesine yardımcı olur. Bu desenler, commit mesajlarının daha okunabilir ve anlaşılır olmasını sağlar.
+
+### Geleneksel (Conventional) Commit Mesajları
+
+Tip, kapsam ve açıklama olmak üzere üç bölümden oluşan geleneksel commit mesajları, commit'in amacını ve etkilediği alanı vurgular.
+
+- **Tip**: Commit'in amacını belirtir.
+- **Kapsam**: Commit'in etkilediği alanı belirtir.
+- **Açıklama**: Commit'in detaylarını belirtir.
+
+```shell
+<tip>[kapsam, zorunlu değil]: <açıklama>
+
+[zorunlu olmayan mesaj metni]
+
+[zorunlu olmayan alt metin(ler)]
+```
+
+```shell
+git commit -m "docs: update conventional commit guidelines"
+```
+
+```shell
+git commit -m "fix(login): add validation for empty password field"
+```
+
+Commit mesajında tip seçimi zorunludur ve sadece 1 adet tip seçilmelidir. Kapsam belirtmek opsiyoneldir.
+
+Aşağıdaki başlıklarda, commit mesajlarında kullanılan tiplere ve açıklamalara yer verilmiştir.
 
 1. **test**: herhangi bir test kodu oluşturma veya değiştirme işlemini gösterir.
 Örnek: Birim testlerinin oluşturulması.
@@ -62,13 +89,8 @@ Tip, bize hangi değişikliğin veya yenilemenin yapıldığını söylemekle so
 Örnek: API belgelerine bilgi ekleme, README'yi değiştirme vb.
 8. **build**: projenin yapım sürecini veya harici bağımlılıklarını etkileyen değişiklikleri göstermek için kullanılır.
 Örnek: Gulp, npm bağımlılıklarını ekleme/kaldırma vb.
-8. **perf**: sistem performansını artıran bir değişikliği gösterir.
+9. **perf**: sistem performansını artıran bir değişikliği gösterir.
 Örnek: ForEach'ü While ile değiştirme vb.
 10. **ci**: CI yapılandırma dosyalarında değişiklikler için kullanılır.
 Örnek: Circle, Travis, BrowserStack vb.
 11. **revert**: önceki bir işlemi geri almaya işaret eder.
-
-- Her commit için sadece bir tür seçmek gerekir.
-- Tür seçimi zorunlu olmalıdır.
-- Hangi türü kullanacağınızı bilmiyorsanız, bu commit'i iki veya daha fazla commit'e bölmek mümkündür;
-- Build ve Chore arasındaki fark oldukça az olabilir ve karışıklığa neden olabilir, bu nedenle doğru türün farkında olunmalıdır. Örneğin Node.js için, belirli bir geliştirme bağımlılığı devDependencies'de varsa, chore kullanılabilir. Projede yaygın bağımlılıkların değişikliklerinde/eklemelerinde ve sisteme doğrudan gerçek bir etkisi olanlarda ise build kullanılabilir.
